@@ -94,7 +94,7 @@ def secureCheckout(driver, infoDict):
 			break
 
 	driver.find_element_by_id('id_ccv').send_keys(cardCCV)
-
+	
 	driver.find_element_by_xpath("//div[@id='main']/form[@method='post']/input[@type='submit']").click()
 
 def main():
@@ -129,9 +129,7 @@ def main():
 	# fills out payment information and continues
 	secureCheckout(driver, infoDict)
 
-
 	driver.close()
-
 
 if __name__ == '__main__':
 	main()

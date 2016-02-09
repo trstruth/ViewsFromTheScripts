@@ -97,6 +97,10 @@ def secureCheckout(driver, infoDict):
 
 	driver.find_element_by_xpath("//div[@id='main']/form[@method='post']/input[@type='submit']").click()
 
+def confirmOrder(driver):
+
+	driver.find_element_by_xpath("//div[@id='main']/div[@class='confirm-wrap']/form[@method='post']/input[@type='submit']").click()
+
 def main():
 
 	# intializes a new driver
@@ -112,7 +116,7 @@ def main():
 	driver.get('http://www.octobersveryown.com/shop/')
 
 	# waits for the new product to be posted on the page, returns when a new product has been posted
-	waitForNewProduct(driver)
+	# waitForNewProduct(driver)
 
 	# finds the first product whos url contains the given keyword, and navigates to its page
 	navigateToProductPage(driver, infoDict['keyword'])
@@ -128,6 +132,9 @@ def main():
 
 	# fills out payment information and continues
 	secureCheckout(driver, infoDict)
+
+	# confirms order
+	confirmOrder(driver)
 
 	driver.close()
 

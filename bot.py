@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 def loadInfo(filepath):
+
 	infoDict = {}
 	with open(filepath) as userInfo:
 		for line in userInfo:
@@ -44,7 +45,6 @@ def navigateToProductPage(driver, keyword):
 			return
 
 def addToCart(driver, infoDict):
-
 
 	mySize = infoDict['size']
 	options = driver.find_element_by_id('options') 
@@ -98,7 +98,6 @@ def secureCheckout(driver, infoDict):
 	driver.find_element_by_xpath("//div[@id='main']/form[@method='post']/input[@type='submit']").click()
 
 def main():
-
 
 	# intializes a new driver
 	driver = webdriver.Chrome()

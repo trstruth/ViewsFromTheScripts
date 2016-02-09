@@ -1,8 +1,8 @@
-email:enter the email associated with your ovo account here
-password:enter your password here
-keyword:enter the keyword to search for here
-size:enter your size here (lower case for apparel, halfsizes for shoes)
-cardNumber:enter your credit card number here
-cardExpMonth:enter the month of your card here (no leading zero)
-cardExpYear:enter the year of your card here
-cardCCV:enter the CCV of your card here (3 digits)
+email,enter the email associated with your ovo account here
+password,enter your password here
+keyword,enter the keyword to search for here
+size,enter your size here (lower case for apparel, halfsizes for shoes)
+cardNumber,enter your credit card number here
+cardExpMonth,enter the month of your card here (no leading zero)
+cardExpYear,enter the year of your card here
+cardCCV,enter the CCV of your card here (3 digits)

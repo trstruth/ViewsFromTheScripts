@@ -6,7 +6,7 @@ def loadInfo(filepath):
 	infoDict = {}
 	with open(filepath) as userInfo:
 		for line in userInfo:
-			thisInfo = line.split(':')
+			thisInfo = line.split(',')
 			infoDict[thisInfo[0]] = thisInfo[1].rstrip()
 	return infoDict
 
@@ -94,7 +94,7 @@ def secureCheckout(driver, infoDict):
 			break
 
 	driver.find_element_by_id('id_ccv').send_keys(cardCCV)
-	
+
 	driver.find_element_by_xpath("//div[@id='main']/form[@method='post']/input[@type='submit']").click()
 
 def main():

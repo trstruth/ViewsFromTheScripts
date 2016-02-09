@@ -1,2 +1,3 @@
-# ViewsFromTheScripts
-An autocheckout bot for octobersveryown.com
+# Views From The Scripts
+
+An autocheckout bot for octobersveryown.com written by Tristan Struthers
